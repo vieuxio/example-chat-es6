@@ -1,0 +1,72 @@
+chat-pane {
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+
+chat-pane img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+}
+
+chat-pane thread {
+    display: block;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+chat-pane messages {
+    position: absolute;
+    display: block;
+    left: 60px;
+    right: 0;
+    top: 35px;
+    bottom: 100px;
+    overflow: auto;
+}
+
+chat-pane username {
+    display: block;
+    position: absolute;
+    left: 60px;
+    margin-bottom: 10px;
+}
+
+chat-pane message {
+    display: block;
+    margin-bottom: 10px;
+}
+
+chat-pane entry {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #efefef;
+    border-top: 1px solid #ddd;
+}
+
+chat-pane input {
+    display: block;
+    margin: 10px;
+    border: 1px solid #aaa;
+    padding: 10px;
+    background: #fff;
+    margin-left: 60px;
+    width: calc(100% - 70px);
+    height: 60px;
+    overflow: auto;
+}
+
+chat-pane entry img {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}

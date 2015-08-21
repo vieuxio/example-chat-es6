@@ -1,0 +1,58 @@
+thread-preview {
+    display: block;
+    padding: 5px;
+    height: 60px;
+    color: #4d4d4d;
+    background: white;
+    line-height: 140%;
+    cursor: pointer;
+}
+
+thread-preview.active {
+    background-color: #6d84b4;
+    color: white;
+}
+
+thread-preview.unread {
+    background-color: #6b90da;
+    color: white;
+    -webkit-animation: unread-pulsate 3s infinite linear;
+}
+
+thread-preview img {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+thread-preview span {
+    position: absolute;
+    display: block;
+    height: 60px;
+    top: 5px;
+    left: 60px;
+    width: calc(100% - 60px);
+    text-overflow: ellipsis;
+}
+
+thread-preview last-message {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+}
+
+@-webkit-keyframes unread-pulsate {
+    0% {
+        background-color: #8bb0fa;
+    }
+    50% {
+        background-color: #6b90da;
+    }
+    100% {
+        background-color: #8bb0fa;
+    }
+}

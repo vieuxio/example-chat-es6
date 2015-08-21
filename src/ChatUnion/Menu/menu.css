@@ -1,0 +1,32 @@
+menu {
+    position: relative;
+    height: 60px;
+    background: #3a5795;
+    color: white;
+    padding: 10px;
+    line-height: 40px;
+}
+
+menu h1 {
+    font-weight: 300;
+    display: inline;
+}
+
+menu button {
+    background: none;
+    color: #fff;
+    float: right;
+    height: 40px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+
+menu button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+menu button:active {
+    background-color: rgba(255, 255, 255, 0.3);
+}

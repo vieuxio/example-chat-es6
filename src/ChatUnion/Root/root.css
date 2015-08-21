@@ -1,0 +1,16 @@
+root {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+chat-boxes {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    align-items: flex-end;
+    z-index: 1;
+}

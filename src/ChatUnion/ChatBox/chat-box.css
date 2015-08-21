@@ -1,0 +1,133 @@
+chat-box {
+    display: inline-block;
+    background-color: #fff;
+    width: 220px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-bottom: none;
+}
+
+chat-box:first-child {
+    margin: 0 10px 0 5px;
+}
+
+chat-box header {
+    background: #6b90da;
+    color: white;
+    padding: 0 5px 0 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+chat-box.active header {
+    background-color: #6d84b4;
+    color: white;
+}
+
+chat-box.unread header {
+    background-color: #6b90da;
+    color: white;
+    -webkit-animation: unread-pulsate 3s infinite linear;
+}
+
+chat-box header strong {
+    max-width: calc(100% - 40px);
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+chat-box img {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+chat-box entry img {
+    display: none;
+}
+
+chat-box content {
+    height: 300px;
+    display: block;
+}
+
+chat-box chat-pane {
+    position: relative;
+    padding: 0;
+}
+
+chat-box chat-pane thread {
+    position: absolute;
+    top: 0;
+    bottom: 50px;
+    height: auto;
+    overflow: auto;
+    padding-top: 10px;
+}
+
+chat-box chat-pane username {
+    top: 5px;
+    left: 35px;
+}
+
+chat-box chat-pane img {
+    top: 5px;
+    left: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+chat-box chat-pane messages {
+    padding: 10px;
+    top: 17px;
+    left: 0;
+    bottom: 0;
+    overflow: visible;
+}
+
+chat-box chat-pane input {
+    margin-left: 10px;
+    height: 30px;
+    padding: 4px;
+    width: calc(100% - 20px);
+}
+
+chat-box.minimized content {
+    display: none;
+}
+
+chat-box close {
+    float: right;
+    cursor: pointer;
+}
+
+chat-box minimize {
+    position: relative;
+    float: right;
+    display: inline-block;
+    height: 100%;
+    width: 17px;
+    cursor: pointer;
+}
+
+chat-box minimize::before {
+    display: block;
+    content: ' ';
+    border-bottom: 3px solid white;
+    height: 16px;
+    margin: 0 4px;
+}
+
+chat-box.minimized minimize::before {
+    display: block;
+    content: ' ';
+    border: 3px solid white;
+    height: 4px;
+    margin: 0 3px;
+    margin-top: 10px;
+}
