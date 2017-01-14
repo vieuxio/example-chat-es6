@@ -60,7 +60,7 @@ export default class ChatBoxCulture extends Culture {
         }
     }
 
-    templates_base() {
+    template() {
         return `<chat-box id="${this.id}">
                 <header>
                     <img src="${this.rep.user.picture.thumbnail}"/>

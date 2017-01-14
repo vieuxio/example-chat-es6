@@ -25,7 +25,7 @@ export default class ChatPaneCulture extends Culture {
         thread.scrollTop = thread.scrollHeight;
     }
 
-    templates_base() {
+    template() {
         return `<chat-pane id="${this.id}">
             ${this.templates_inner()}
             </chat-pane>`;

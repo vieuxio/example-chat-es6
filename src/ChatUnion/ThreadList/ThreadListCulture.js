@@ -38,7 +38,7 @@ export default class ThreadListCulture extends Culture {
         });
     }
 
-    templates_base() {
+    template() {
         return `<thread-list id="${this.id}"></thread-list>`;
     }
 

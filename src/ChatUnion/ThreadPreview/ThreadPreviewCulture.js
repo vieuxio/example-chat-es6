@@ -33,7 +33,7 @@ export default class ThreadPreviewCulture extends Culture {
         return this.rep.thread;
     }
 
-    templates_base() {
+    template() {
         var active = this.rep.active ? 'active' : '';
 
         return `<thread-preview id="${this.id}" class="${active}">

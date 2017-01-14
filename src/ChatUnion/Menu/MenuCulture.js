@@ -22,7 +22,7 @@ export default class MenuCulture extends Culture {
         this.popover.toggle();
     }
 
-    templates_base() {
+    template() {
         return `<menu id="${this.id}">
             <h1>Chat</h1>
             <button>${this.templates_button()}</button>

@@ -28,7 +28,7 @@ export default class MotherPaneCulture extends Culture {
         this.rep.setActive(threadPreview.thread);
     }
 
-    templates_base() {
+    template() {
         return `<mother-pane id="${this.id}">
                 ${this.threadList}
             </mother-pane>`;
