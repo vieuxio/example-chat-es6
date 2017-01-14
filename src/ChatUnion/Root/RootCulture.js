@@ -64,7 +64,7 @@ export default class RootCulture extends Culture {
         this.chatBoxes.forEach(chatBox => chatBox.render());
     }
 
-    templates_base() {
+    template() {
         return `<root id="${this.id}">
             ${this.menu}
             ${this.motherPane}

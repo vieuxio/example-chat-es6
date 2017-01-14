@@ -24,7 +24,7 @@ export default class ThreadsPopoverCulture extends Culture {
         return false;
     }
 
-    templates_base() {
+    template() {
         var visible = this.rep.visible ? 'visible' : '';
 
         return `<threads-popover id="${this.id}" class="${visible}">
