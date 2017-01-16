@@ -10,7 +10,13 @@
     "node-libs-browser": "^0.5.2",
     "politburo": "1.1.1",
     "style-loader": "^0.12.3",
-    "webpack": "^1.11.0"
+    "webpack": "^1.11.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "scripts": {
+    "build:dev": "webpack",
+    "build:prod": "BUNDLE=1 webpack",
+    "server": "webpack-dev-server --port 1973"
   },
   "repository": {
     "type": "git",
