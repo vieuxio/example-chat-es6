@@ -32,7 +32,7 @@ and the project will be ready for development and inspection. The server watches
 
 ## Production builds
 
-When you are satisfied with development and want to make a production build in order to deploy the app, just run 
+When you are satisfied with development and want to make a production build in order to deploy the app, just run
 
 ```
 npm run build:prod
