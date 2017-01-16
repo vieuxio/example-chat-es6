@@ -35,7 +35,7 @@ and the project will be ready for development and inspection. The server watches
 When you are satisfied with development and want to make a production build in order to deploy the app, just run
 
 ```
-npm run build:prod
+$ npm run build:prod
 ```
 
 and a minified, optimized bundle will be deployed under the `dist` folder.
