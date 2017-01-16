@@ -15,7 +15,7 @@ $ npm install
 Now you are ready to run the project. After you execute this command, the project will be built and you can open `dist/index.html` with your favorite browser.
 
 ```
-$ webpack
+$ npm run build:dev
 ```
 
 ## Development
@@ -25,7 +25,7 @@ This project provides a development web server that listens on port 1973.
 Run
 
 ```
-$ webpack-dev-server --port 1973
+$ npm run server
 ```
 
 and the project will be ready for development and inspection. The server watches for file changes with hot reloading, so any change you make to the files under `src` folder will cause an automatic reload.
@@ -35,7 +35,7 @@ and the project will be ready for development and inspection. The server watches
 When you are satisfied with development and want to make a production build in order to deploy the app, just run 
 
 ```
-$ BUNDLE=1 webpack
+npm run build:prod
 ```
 
 and a minified, optimized bundle will be deployed under the `dist` folder.
